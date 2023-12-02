@@ -3,7 +3,11 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Wall
+  - Bullet
+  - Enemy
+  - Exit
   layers:
   - Default
   - TransparentFX
@@ -41,9 +45,9 @@ TagManager:
   - name: Player
     uniqueID: 1059039791
     locked: 0
-  - name: BG
-    uniqueID: 1838339109
-    locked: 0
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Tutorial
+    uniqueID: 1838339109
     locked: 0
