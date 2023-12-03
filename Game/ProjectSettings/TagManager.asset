@@ -51,3 +51,9 @@ TagManager:
   - name: Tutorial
     uniqueID: 1838339109
     locked: 0
+  - name: Turret
+    uniqueID: 2920852189
+    locked: 0
+  - name: Bullet
+    uniqueID: 727173699
+    locked: 0
