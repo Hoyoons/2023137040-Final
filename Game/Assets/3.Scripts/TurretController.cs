@@ -2,9 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class TurretControler : MonoBehaviour
 {
-    
     public Transform player; // 플레이어의 Transform
     public Transform turretHead; // 포탑의 머리(회전 부분)
     public GameObject bulletPrefab; // 총알 프리팹
@@ -20,10 +20,12 @@ public class TurretControler : MonoBehaviour
     private bool isPlayerDetected = false;
     private Quaternion initialRotation; // 초기 회전값 저장용 변수
 
+
     void Start()
     {
         currentHealth = maxHealth;
         initialRotation = turretHead.rotation; // 시작할 때 초기 회전값 저장
+
     }
     public void TakeDamage(int damage)
     {
@@ -44,7 +46,7 @@ public class TurretControler : MonoBehaviour
 
     void Update()
     {
-
+      
         float distanceOffset = 1.0f; // 시작 위치를 조정하기 위한 값
         Vector2 raycastStartPoint = turretHead.position + (turretHead.up * distanceOffset); // 터렛 방향으로 distanceOffset만큼 이동한 지점
 

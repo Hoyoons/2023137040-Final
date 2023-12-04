@@ -23,5 +23,9 @@ public class Bullet : MonoBehaviour
         {
             Destroy(gameObject); // ÃÑ¾Ë ÆÄ±«
         }
+        if (collision.gameObject.CompareTag("Door")) // º®¿¡ ´ê¾ÒÀ» ¶§
+        {
+            Destroy(gameObject); // ÃÑ¾Ë ÆÄ±«
+        }
     }
 }
