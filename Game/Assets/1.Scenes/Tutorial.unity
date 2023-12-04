@@ -1224,6 +1224,10 @@ PrefabInstance:
       value: 210
       objectReference: {fileID: 0}
     - target: {fileID: 8133877531139392817, guid: 2f1d5fc50d734564eb6b40b88a0e434c, type: 3}
+      propertyPath: targetSceneName
+      value: GameoverScreen
+      objectReference: {fileID: 0}
+    - target: {fileID: 8133877531139392817, guid: 2f1d5fc50d734564eb6b40b88a0e434c, type: 3}
       propertyPath: turretRotationSpeed
       value: 200
       objectReference: {fileID: 0}

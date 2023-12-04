@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class TankController : MonoBehaviour
 {
@@ -13,6 +14,7 @@ public class TankController : MonoBehaviour
     public Transform turretParent;
     public int maxHealth = 100;
     private int currentHealth;
+    public string targetSceneName;
 
     void Start()
     {
@@ -33,6 +35,7 @@ public class TankController : MonoBehaviour
 void Die()
     {
         Debug.Log("Tank has died!");
+        SceneManager.LoadScene(targetSceneName);
 
     }
     private void Awake()
